@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header-container {
+    width: 100%;
+    background-color: rgb(37, 37, 35);
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    height: 70px;   
+}
+
+.header-content {
+    color: white;
+}
+
+.header-content span {
+    color: pink;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 35px;
+}
+
+.li-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-wrapper button {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-wrapper .hamburger {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.hamburger {
+    cursor: pointer;
+    /* background-color: white; */
+}
+
+.hamburger .burger-menu {
+    background-color: aliceblue;
+    width: 25px;
+    height: 2px;
+    margin: 3px 0px;
+}
+
+@media screen and (max-width:768px) {
+    .nav-links,
+    .header-wrapper button {
+        display: none;
+    }
+    .header-wrapper .hamburger {
+        display: flex;
+        flex-direction: column;
+        outline: none;
+    }
+    
+}
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10rem;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+.hero-section{
+    width: 50%;
+}
+.hero-content h1{
+    font-size: 2.5rem;
+    text-decoration-color: aliceblue;
+}
+.hero content p{
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+.hero-section a{
+    text-decoration-color: none;
+    color: black;
+    background-color: tomato;
+    padding: 0.2rem;
+    border-radius: 30px;
+}
+.anada-section{
+    margin-top: 13rem;
+}
+.anada-content{
+    width: 70%;
+    margin: 0 auto;
+    text-decoration: palevioletred;
+}
